@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestModalNet8.TestModalPage2"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.PresentationMode="Modal">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Modal Page 2" />
+
+            <Button Clicked="GoToModal3" Text="Go To Modal 3" />
+
+            <Button Clicked="GoBack" Text="Go Back" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
